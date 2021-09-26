@@ -2,7 +2,7 @@
   "name": "create-cloudgate-app",
   "bin": {
     "create-cloudgate-app": "./index.js"
-  }
+  },
   "version": "1.0.1",
   "description": "Create a cloudgate app quickly",
   "main": "index.js",
