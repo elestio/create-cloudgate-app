@@ -1,4 +1,4 @@
-const { execSync } = require('child_process');
+const child_process = require('child_process');
 const path = require('path');
 const fs = require('fs');
 
@@ -44,12 +44,12 @@ try {
 async function main() {
     try {
         console.log('Downloading files...');
-        execSync(`git clone --depth 1 ${git_repo} ${projectPath}`);
+        child_process.execSync(`git clone --depth 1 ${git_repo} ${projectPath}`);
 
         process.chdir(projectPath);
 
         console.log('Installing dependencies...');
-        execSync('npm install --loglevel=error');
+        child_process.execSync('npm install --loglevel=error');
         deleteFolderRecursive(projectPath + "/.git");
         deleteFolderRecursive(projectPath + "/node_modules/aws-sdk");
 
