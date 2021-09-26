@@ -1,0 +1,13 @@
+{
+  "name": "create-cloudgate-app",
+  "version": "1.0.0",
+  "description": "Create a cloudgate app quickly",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "elestio",
+  "dependencies": {
+    
+  }
+}
